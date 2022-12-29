@@ -44,7 +44,8 @@ body {
     width: ;
   } */
   .search {
-    min-width: 123px !important;
+    min-width: 123px !important; 
+    margin-top: 1% !important ;
   }
   .search_pokemon {
     width: 73% !important ;

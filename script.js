@@ -23,9 +23,9 @@ const Color = {
 };
 
 let generateCard = (data) => {
-  console.log(data);
+  // console.log(data);
   const id = data.id;
-  console.log(id);
+  // console.log(id);
   const hp = data.stats[0].base_stat;
   const image = `https://unpkg.com/pokeapi-sprites@2.0.2/sprites/pokemon/other/dream-world/${id}.svg`;
   const name = data.name.toUpperCase();
@@ -87,9 +87,10 @@ let styleCard = (color) => {
   });
 };
 
-function generateNewUrl(num,a){
+function generateNewUrl(a){
  let newUrl ;
     if(a===0){
+      let num = Math.floor(Math.random() * 150) + 1;
      newUrl= url + num;}
      else{
         newUrl=url+searchPokemon.value.toLowerCase();
@@ -104,15 +105,18 @@ function generateNewUrl(num,a){
 }
 
 
-let getData = (a) => {
-  let num = Math.floor(Math.random() * 550) + 1;
-generateNewUrl(num,a);
+// let getData = (a) => {
   
-};
+// generateNewUrl(a);
+  
+// };
+function windowR(){
+  generateNewUrl(0);
+}
 
-generateBtn.addEventListener("click", getData(0));
-window.addEventListener("load", getData(0));
+generateBtn.addEventListener("click", ()=>windowR());
+window.addEventListener("load",()=>windowR());
 search.addEventListener("click", function () {
-  console.log(searchPokemon.value);
-  getData(1)
+  // console.log(searchPokemon.value);
+  generateNewUrl(1)
 });
