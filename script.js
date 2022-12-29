@@ -90,7 +90,7 @@ let styleCard = (color) => {
 function generateNewUrl(a){
  let newUrl ;
     if(a===0){
-      let num = Math.floor(Math.random() * 150) + 1;
+      let num = Math.floor(Math.random() * 500) + 1;
      newUrl= url + num;}
      else{
         newUrl=url+searchPokemon.value.toLowerCase();
