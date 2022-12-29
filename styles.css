@@ -1,0 +1,58 @@
+h2 {
+  font-family: "Dancing Script", cursive;
+}
+
+h1 {
+  color: #c80f0fcc !important;
+}
+
+body {
+  font-family: "Merriweather", serif;
+}
+
+.header input[type="text"] {
+  border-radius: 8px;
+  width: 20%;
+  text-align: center;
+}
+.card_outline {
+  width: 27vw;
+  min-width: 250px;
+  margin: 0 auto;
+  border-radius: 16px;
+  box-shadow: -1px 0px 18px 7px grey;
+}
+.card-text span {
+  border-radius: 8px;
+  width: 30%;
+  text-align: center;
+}
+.header h1 {
+  text-shadow: 2px 2px 8px #ce3737;
+}
+
+.generate {
+  width: 300px;
+}
+
+.main {
+  padding-top: 4% 0 0 0;
+}
+
+@media (max-width: 900px) {
+  /* .card_outline {
+    width: ;
+  } */
+  .search {
+    min-width: 123px !important;
+  }
+  .search_pokemon {
+    width: 73% !important ;
+    padding-top: 8px !important;
+  }
+}
+
+.search_pokemon {
+  width: 73% !important;
+  padding-top: 8px;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POKEMON CARD GENERATOR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Big+Shoulders+Display:wght@700&family=Dancing+Script:wght@400;600&family=Kumbh+Sans:wght@400;700&family=Lato:wght@300&family=Lexend+Deca&family=Merriweather&family=Montserrat&family=Open+Sans:wght@400;700&family=Poppins:wght@200;400;600&family=Raleway:wght@400;700&family=Rubik:wght@400;500;700&family=Sacramento&family=Space+Grotesk:wght@500&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div
+      class="container-fluid header d-flex p-4 justify-content-evenly text-center flex-wrap"
+    >
+      <div class="d-inline">
+        <h1 class="">POKECARD GENERATOR</h1>
+      </div>
+      <div class="searching">
+        <input
+        type="text"
+        class="btn  search_pokemon btn-outline-success"
+        placeholder="Enter your favourite Pokemon"
+      />
+      <button class="btn w-25 search btn-warning text-center">Search</button>
+    </div>
+    </div>
+
+    <section class="main container-fluid bg-info pt-2">
+      <div class="card_outline">
+        <div class=" card border-0 mx-auto" style="max-width: 20rem">
+          <img
+            src="images/1200px-Ash_Pikachu.png"
+            class="card-img-top img-fluid"
+            alt="..."
+          />
+          <div class="card-body">
+            <div class="text-center pb-4">
+              <h2 class="card-title">PIKACHU</h2>
+              <span class="d-inline">HP: 100</span>
+            </div>
+            <p class="card-text d-flex justify-content-evenly">
+              <span>type1</span><span>type2</span>
+            </p>
+            <div class="powers d-flex text-center justify-content-evenly flex-wrap">
+              <div>
+                <h5>100</h5>
+                <p>Attack</p>
+              </div>
+              <div>
+                <h5>100</h5>
+                <p>Defense</p>
+              </div>
+              <div>
+                <h5>100</h5>
+                <p>Speed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="button d-flex justify-content-evenly p-3">
+        <button class="btn generate btn-danger">GENERATE</button>
+      </div>
+    </section>
+    <footer class="bg-dark text-center container-fluid p-5 text-white">
+      <div class="row">
+        <div class="col-md-4">
+          <p>About</p>
+          <p class="text-muted">AYUSH KAPRUWAN</p>
+        </div>
+        <div class="col-md-4">
+          <h6>Contact:</h6>
+          <p class="text-muted pt-2">
+            <a
+              href="https://www.instagram.com/"
+              class="text-white-50 text-decoration-none"
+              >Instagram</a
+            >
+          </p>
+          <p class="text-muted">
+            <a
+              href="https://www.linkedin.com/in/ayush-kapruwan-96117a213/"
+              class="text-white-50 text-decoration-none"
+              >Linkedin</a
+            >
+          </p>
+        </div>
+        <div class="col-md-4">
+          <p>For related information:</p>
+          <p class="">
+            <a
+              class="text-white-50 text-decoration-none"
+              href="https://www.pokemon.com/us"
+              >Click here</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
